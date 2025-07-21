@@ -61,20 +61,24 @@ useGSAP(()=>{
                 </a>
                </div>
                {/* {Right side} */}
+               
                <div className="project-list-wrapper overflow-hidden">
+               <a href="https://golfclube.netlify.app/" target='_blank'>
                 <div className="project" ref={project2Ref}>
                     <div className='image-wrapper bg-[#ffefdb]'>
                         <img src="/images/project2.png" alt="" />
                     </div>
-                    <h2>Libraray managment Project</h2>
+                    <h2>Golf Clube Project</h2>
                 </div>
-
+                </a>
+                <a href="https://lazarev-clone-1.netlify.app/" target='_blank'>
                 <div className="project" ref={project3Ref}>
                     <div className='image-wrapper bg-[#ffe7db]'>
                         <img src="/images/project3.png" alt="" />
                     </div>
-                    <h2>YC-directory- A startUp Project</h2>
+                    <h2>Lazarev Clone -2024</h2>
                 </div>
+                </a>
 
                </div>
             </div>

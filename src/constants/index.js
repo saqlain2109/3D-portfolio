@@ -11,10 +11,6 @@ const navLinks = [
       name: "Skills",
       link: "#skills",
     },
-    {
-      name: "Testimonials",
-      link: "#testimonials",
-    },
   ];
   
   const words = [
@@ -258,7 +254,7 @@ const navLinks = [
       imgPath: "/images/x.png",
     },
     {
-      name: "linkedin",
+      name: "https://www.linkedin.com/in/saqlain-supariwala/",
       imgPath: "/images/linkedin.png",
     },
   ];

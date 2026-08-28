@@ -81,7 +81,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 pt-28 md:pt-36 xl:pt-20 min-h-screen flex flex-col xl:flex-row xl:items-center items-start justify-between;
   }
 
   .hero-text {
@@ -99,7 +99,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply relative xl:absolute xl:w-[65%] w-full h-[380px] sm:h-[480px] xl:h-full xl:-top-10 xl:-right-10 right-0 mt-4 xl:mt-0;
   }
 
   .navbar {

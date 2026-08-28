@@ -1,23 +1,27 @@
 import { Canvas } from '@react-three/fiber'
-import { OrbitControls, Environment, useGLTF, AccumulativeShadows, RandomizedLight, Sparkles, ContactShadows } from '@react-three/drei'
-import React, { Suspense } from 'react'
+import { OrbitControls, Environment, useGLTF, Sparkles, ContactShadows } from '@react-three/drei'
+import React, { Suspense, useMemo } from 'react'
 
 function LowPolyScene(props) {
   const { scene } = useGLTF('/models/low_poly_man_working_at_a_table_with_a_laptop.glb')
-  scene.traverse((child) => {
-    if (child.isMesh) {
-      child.castShadow = true
-      child.receiveShadow = true
-    }
-  })
+  
+  useMemo(() => {
+    scene.traverse((child) => {
+      if (child.isMesh) {
+        child.castShadow = true
+        child.receiveShadow = true
+      }
+    })
+  }, [scene])
+
   return <primitive object={scene} {...props} />
 }
 
-const ContectExperience = () => {
+const ContactExperience = () => {
   return (
-    <Canvas shadows camera={{ position: [-3, 2, 4], fov: 45 }}>
-      <color attach="background" args={['#ffffff']} />
-      <fog attach="fog" args={['#ffffff', 3, 10]} />
+    <Canvas dpr={[1, 1.5]} gl={{ powerPreference: 'default' }} shadows camera={{ position: [-3, 2, 4], fov: 45 }}>
+      <color attach="background" args={['#0e0e10']} />
+      <fog attach="fog" args={['#0e0e10', 3, 10]} />
       <Suspense fallback={null}>
         <OrbitControls 
           enableZoom={false}
@@ -46,8 +50,8 @@ const ContectExperience = () => {
           scale={4} 
           size={2} 
           speed={0.4} 
-          opacity={0.1} 
-          color="#ffe4e1"
+          opacity={0.3} 
+          color="#62e0ff"
           position={[0, 0, 0]}
         />
       </Suspense>
@@ -70,4 +74,6 @@ const ContectExperience = () => {
   )
 }
 
-export default ContectExperience
+useGLTF.preload('/models/low_poly_man_working_at_a_table_with_a_laptop.glb')
+
+export default ContactExperience

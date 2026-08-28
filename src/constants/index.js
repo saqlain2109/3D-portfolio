@@ -11,6 +11,10 @@ const navLinks = [
       name: "Skills",
       link: "#skills",
     },
+    {
+      name: "Reviews",
+      link: "#testimonials",
+    },
   ];
   
   const words = [
@@ -242,19 +246,23 @@ const navLinks = [
   
   const socialImgs = [
     {
-      name: "https://www.instagram.com/saqlain_stuff?igsh=YjlkeDBqZHV3Z2o4",
+      name: "Instagram",
+      url: "https://www.instagram.com/saqlain_stuff?igsh=YjlkeDBqZHV3Z2o4",
       imgPath: "/images/insta.png",
     },
     {
-      name: "fb",
+      name: "Facebook",
+      url: "https://facebook.com",
       imgPath: "/images/fb.png",
     },
     {
-      name: "x",
+      name: "X",
+      url: "https://x.com",
       imgPath: "/images/x.png",
     },
     {
-      name: "https://www.linkedin.com/in/saqlain-supariwala/",
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/saqlain-supariwala/",
       imgPath: "/images/linkedin.png",
     },
   ];

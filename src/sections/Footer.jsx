@@ -17,19 +17,20 @@ const Footer = () => {
           {socialImgs.map((social) => (
             <a 
               key={social.name} 
-              href={social.name} 
+              href={social.url} 
               target="_blank" 
               rel="noopener noreferrer"
+              aria-label={social.name}
               className='icon'
             >
-              <img src={social.imgPath} alt={social.name} />
+              <img src={social.imgPath} alt={social.name} className='size-5 object-contain' />
             </a>
           ))}
         </div>
 
         {/* Right Section - Copyright */}
-        <div className='flex flex-col gap-2 items-end'>
-          <p className='text-white-50'>© 2024 Saqlain | Stuff</p>
+        <div className='flex flex-col gap-2 items-center md:items-end'>
+          <p className='text-white-50'>© {new Date().getFullYear()} Saqlain | Stuff</p>
           <p className='text-blue-50 text-sm'>All rights reserved</p>
         </div>
       </div>

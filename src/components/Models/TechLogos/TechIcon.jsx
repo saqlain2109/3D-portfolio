@@ -14,20 +14,19 @@ const TechIcon = ({ model }) => {
                 }
             })
         }
-    })
+    }, [model.name, scene.scene])
   return (
-    <Canvas>
-        <ambientLight intensity={0.3} />
-        <directionalLight position={[5,5,5]} intensity={1}/>
+    <Canvas dpr={[1, 1.5]} gl={{ powerPreference: 'default', antialias: false }}>
+        <ambientLight intensity={0.5} />
+        <directionalLight position={[5, 5, 5]} intensity={1} />
         <Environment preset='city' />
 
-        <OrbitControls enableZoom={false} />
+        <OrbitControls enableZoom={false} enablePan={false} />
 
-        <Float speed={5.5} rotationIntensity={0.5}>
+        <Float speed={2.5} rotationIntensity={0.4} floatIntensity={0.6}>
             <group scale={model.scale} rotation={model.rotation}>
                 <primitive object={scene.scene}/>
             </group>
-
         </Float>
     </Canvas>
   )

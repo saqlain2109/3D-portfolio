@@ -1,20 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import React, { useEffect, useState, useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Environment, Sparkles } from '@react-three/drei';
-import * as THREE from 'three';
 
 const LoadingCube = () => {
-  const [rotation, setRotation] = useState(0);
+  const meshRef = useRef();
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRotation(prev => prev + 0.01);
-    }, 16);
-    return () => clearInterval(interval);
-  }, []);
+  useFrame((_, delta) => {
+    if (meshRef.current) {
+      meshRef.current.rotation.x += delta * 0.8;
+      meshRef.current.rotation.y += delta * 1.2;
+    }
+  });
 
   return (
-    <mesh rotation={[rotation, rotation * 1.5, 0]}>
+    <mesh ref={meshRef}>
       <boxGeometry args={[2, 2, 2]} />
       <meshStandardMaterial 
         color="#4cc9f0"
@@ -37,15 +36,15 @@ const Loading = () => {
           clearInterval(interval);
           return 100;
         }
-        return prev + 1;
+        return Math.min(100, prev + 5);
       });
-    }, 30);
+    }, 40);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="fixed inset-0 bg-black-100 flex flex-col items-center justify-center z-50">
-      <div className="w-32 h-32 mb-8">
+      <div className="w-36 h-36 mb-6">
         <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
           <ambientLight intensity={0.5} />
           <pointLight position={[10, 10, 10]} />
@@ -57,13 +56,13 @@ const Loading = () => {
       </div>
       <div className="w-64 h-2 bg-gray-800 rounded-full overflow-hidden">
         <div 
-          className="h-full bg-blue-500 transition-all duration-300"
+          className="h-full bg-gradient-to-r from-cyan-400 to-blue-500 transition-all duration-150"
           style={{ width: `${progress}%` }}
         />
       </div>
-      <p className="mt-4 text-white text-lg">{progress}%</p>
+      <p className="mt-4 text-white-50 text-base tracking-wider font-mono">{progress}%</p>
     </div>
   );
 };
 
-export default Loading; 
+export default Loading;

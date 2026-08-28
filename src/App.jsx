@@ -6,18 +6,21 @@ import LogoSection from './components/LogoSection.jsx'
 import FeatureCards from './sections/FeatureCards.jsx'
 import ExperienceSection from './sections/ExperienceSection.jsx'
 import TechStack from './sections/TechStack.jsx'
+import Testimonials from './sections/Testimonials.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import Loading from './components/Loading.jsx'
+import CustomCursor from './components/CustomCursor.jsx'
+import TerminalModal from './components/TerminalModal.jsx'
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading time
+    // Simulate initial asset loading
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 900);
 
     return () => clearTimeout(timer);
   }, []);
@@ -28,15 +31,18 @@ const App = () => {
 
   return (
     <>
-      <NavBar/>
+      <CustomCursor />
+      <NavBar />
       <Hero />
-      <ShowcaseSection/>
+      <ShowcaseSection />
       <LogoSection />
       <FeatureCards />
       <ExperienceSection />
       <TechStack />
+      <Testimonials />
       <Contact />
       <Footer />
+      <TerminalModal />
     </>
   )
 }

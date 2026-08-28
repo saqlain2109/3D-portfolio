@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { counterItems } from "../constants";
 
@@ -13,25 +13,25 @@ const AnimatedCounter = () => {
 
   useGSAP(() => {
     countersRef.current.forEach((counter, index) => {
+      if (!counter) return;
       const numberElement = counter.querySelector(".counter-number");
       const item = counterItems[index];
+      if (!numberElement || !item) return;
 
-      // Set initial value to 0
-      gsap.set(numberElement, { innerText: "0" });
+      const countObj = { val: 0 };
+      numberElement.textContent = `0${item.suffix}`;
 
-      // Create the counting animation
-      gsap.to(numberElement, {
-        innerText: item.value,
-        duration: 2.5,
+      gsap.to(countObj, {
+        val: item.value,
+        duration: 2,
         ease: "power2.out",
-        snap: { innerText: 1 }, // Ensures whole numbers
         scrollTrigger: {
           trigger: "#counter",
-          start: "top 80%",
-        //   markers: true
-          
+          start: "top 85%",
         },
-        // Add the suffix after counting is complete
+        onUpdate: () => {
+          numberElement.textContent = `${Math.round(countObj.val)}${item.suffix}`;
+        },
         onComplete: () => {
           numberElement.textContent = `${item.value}${item.suffix}`;
         },

@@ -89,7 +89,7 @@ const Hero = () => {
             </p>
             
             <div className='flex flex-wrap items-center gap-3.5 relative z-10'>
-              <Button className="md:w-64 md:h-16 w-52 h-12 text-sm md:text-base" id='work' text='Explore My Work'/> 
+              <Button className="md:w-64 md:h-14 w-56 h-12" id='work' text='Explore My Work'/> 
               
               <button
                 onClick={handleDownloadCV}

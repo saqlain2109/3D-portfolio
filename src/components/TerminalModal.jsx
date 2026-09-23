@@ -69,10 +69,24 @@ I transform complex design concepts into high-performing, fluid websites.`,
       case 'work':
         newHistory.push({
           type: 'output',
-          text: `⭐ Featured Projects:
-  1. Zentry Clone (Awwwards-winning Animated Site) -> https://zentryclonebyme.netlify.app/
-  2. Golf Club Experience -> https://golfclube.netlify.app/
-  3. Lazarev Agency Clone -> https://lazarev-clone-1.netlify.app/`,
+          text: `⭐ Featured Projects & Live Work:
+  1. Zentry 3D Clone (Awwwards-winning Animated Site)
+     → https://zentryclonebyme.netlify.app/
+
+  2. Golf Club Experience (Interactive Booking & Design)
+     → https://golfclube.netlify.app/
+
+  3. macOS Interactive Portfolio (Full Desktop Web OS)
+     → https://mac-ios-portfolio.netlify.app/
+
+  4. Enterprise E-Procurement System (MERN Stack)
+     → https://github.com/saqlain2109/E-procument
+
+  5. Travel & Expense Management Portal (Full-Stack)
+     → https://github.com/saqlain2109/newtravel
+
+  6. Lazarev Agency Clone (Motion Web)
+     → https://lazarev-clone-1.netlify.app/`,
         });
         break;
 

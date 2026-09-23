@@ -105,7 +105,7 @@ const Hero = () => {
         {/*RIGHT: 3D Model */}
         <figure className='relative w-full xl:w-[52%] h-[400px] sm:h-[480px] md:h-[540px] xl:h-[650px] 2xl:h-[720px] flex flex-col items-center justify-center mt-4 xl:mt-0'>
           {/* Room Lighting Switch Badge - Cleanly positioned above the 3D room canvas */}
-          <div className="absolute top-3 right-4 md:right-8 z-30 flex items-center gap-2 bg-black-100/90 border border-cyan-500/30 px-3.5 py-1.5 rounded-full backdrop-blur-md shadow-lg pointer-events-auto">
+          <div className="absolute top-5 md:top-6 right-4 md:right-8 z-30 flex items-center gap-2 bg-black-100/90 border border-cyan-500/30 px-3.5 py-1.5 rounded-full backdrop-blur-md shadow-lg pointer-events-auto">
             <span className="text-xs text-white-50 font-medium">Room Mood:</span>
             <button
               type="button"

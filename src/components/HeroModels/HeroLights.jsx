@@ -6,6 +6,13 @@ const HeroLights = ({ theme = 'cyberpunk' }) => {
 
   return (
     <>
+      <ambientLight intensity={isCyberpunk ? 0.7 : 0.9} color={isCyberpunk ? "#ffffff" : "#fff8ee"} />
+      <directionalLight 
+        position={[5, 8, 5]} 
+        intensity={isCyberpunk ? 1.0 : 1.2} 
+        color={isCyberpunk ? "#dbeafe" : "#fef3c7"} 
+      />
+
       <spotLight 
         position={[2, 5, 3]}
         angle={0.15}

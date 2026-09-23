@@ -10,17 +10,21 @@ import Testimonials from './sections/Testimonials.jsx'
 import Contact from './sections/Contact.jsx'
 import Footer from './sections/Footer.jsx'
 import Loading from './components/Loading.jsx'
-import CustomCursor from './components/CustomCursor.jsx'
 import TerminalModal from './components/TerminalModal.jsx'
+import { useGLTF, useTexture } from '@react-three/drei'
+
+// Preload 3D room and texture immediately at startup so it loads instantly
+useGLTF.preload('/models/optimized-room.glb')
+useTexture.preload('/images/textures/mat1.png')
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate initial asset loading
+    // Quick initial loading screen
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 900);
+    }, 600);
 
     return () => clearTimeout(timer);
   }, []);
@@ -31,7 +35,6 @@ const App = () => {
 
   return (
     <>
-      <CustomCursor />
       <NavBar />
       <Hero />
       <ShowcaseSection />

@@ -209,42 +209,42 @@ const navLinks = [
       name: "Esther Howard",
       mentions: "@estherhoward",
       review:
-        "I can’t say enough good things about Saqlain. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+        "I can’t say enough good things about Saqlain. He took our complex 3D web requirements and turned them into a seamless, high-performance website. His Three.js and React expertise is truly world-class, and his problem-solving skills saved us weeks of work.",
       imgPath: "/images/client1.png",
     },
     {
       name: "Wade Warren",
       mentions: "@wadewarren",
       review:
-        "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+        "Working with Saqlain was an absolute game-changer. He transformed our concept into a futuristic, ultra-responsive digital experience with silky-smooth GSAP animations. His commitment to speed, code quality, and on-time delivery is unmatched.",
       imgPath: "/images/client3.png",
     },
     {
       name: "Guy Hawkins",
       mentions: "@guyhawkins",
       review:
-        "Collaborating with Saqlain was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Saqlain's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Saqlain is the ideal partner.",
+        "Collaborating with Saqlain was an extraordinary experience. His technical depth, clear communication, and eye for modern interactive design are exceptional. Saqlain delivered a product that genuinely elevated our brand and impressed all our stakeholders.",
       imgPath: "/images/client2.png",
     },
     {
       name: "Marvin McKinney",
       mentions: "@marvinmckinney",
       review:
-        "Saqlain was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+        "Saqlain is one of the most talented frontend and 3D developers I have had the pleasure to work with. He took our rough ideas and crafted an intuitive, visually stunning web app that runs flawlessly across both mobile and desktop.",
       imgPath: "/images/client5.png",
     },
     {
       name: "Floyd Miles",
       mentions: "@floydmiles",
       review:
-        "Saqlain’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+        "Saqlain's mastery of React, Three.js, and modern UI design is remarkable. He built a scalable, interactive platform that doubled our user retention within weeks of launch. Reliable, creative, and highly professional!",
       imgPath: "/images/client4.png",
     },
     {
       name: "Albert Flores",
       mentions: "@albertflores",
       review:
-        "Saqlain was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+        "Saqlain understood our exact vision right from our initial discussion and delivered results that exceeded our highest expectations. He writes clean, modular code and ensures every micro-interaction feels polished. 10/10 recommended!",
       imgPath: "/images/client6.png",
     },
   ];

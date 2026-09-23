@@ -151,3 +151,4 @@ export function Room({ theme = 'cyberpunk', ...props }) {
 }
 
 useGLTF.preload("/models/optimized-room.glb");
+useTexture.preload("/images/textures/mat1.png");

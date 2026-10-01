@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Hero from './sections/Hero.jsx'
 import ShowcaseSection from './sections/ShowcaseSection.jsx'
 import NavBar from './components/NavBar.jsx'
@@ -20,21 +20,9 @@ useTexture.preload('/images/textures/mat1.png')
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // Quick initial loading screen
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 600);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <Loading />;
-  }
-
   return (
     <>
+      {isLoading && <Loading onComplete={() => setIsLoading(false)} />}
       <NavBar />
       <Hero />
       <ShowcaseSection />

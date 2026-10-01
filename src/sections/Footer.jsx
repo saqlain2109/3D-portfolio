@@ -1,10 +1,14 @@
 import React from 'react'
 import { socialImgs } from '../constants'
+import AnimatedSignature from '../components/AnimatedSignature'
 
 const Footer = () => {
   return (
     <footer className='footer'>
-      <div className='footer-container'>
+      {/* Animated Handwriting Stroke Signature for Saqlain */}
+      <AnimatedSignature />
+
+      <div className='footer-container border-t border-white/5 pt-8'>
         {/* Left Section - Terms & Conditions */}
         <div className='flex flex-col gap-2'>
           <p className='text-white-50'>Terms & Conditions</p>

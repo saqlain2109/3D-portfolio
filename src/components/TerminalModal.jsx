@@ -32,6 +32,7 @@ const TerminalModal = () => {
           type: 'output',
           text: `Available Commands:
   • about     - Learn about Saqlain
+  • experience- 4+ years career history
   • skills    - View core technical stack
   • projects  - See featured work & clones
   • contact   - Get in touch details
@@ -73,20 +74,38 @@ I transform complex design concepts into high-performing, fluid websites.`,
   1. Zentry 3D Clone (Awwwards-winning Animated Site)
      → https://zentryclonebyme.netlify.app/
 
-  2. Golf Club Experience (Interactive Booking & Design)
+  2. Fizzi 3D Interactive Soda Brand (Next.js 14 & Three.js)
+     → https://fizzi-xi-one.vercel.app/
+
+  3. Golf Club Experience (Interactive Booking & Design)
      → https://golfclube.netlify.app/
 
-  3. macOS Interactive Portfolio (Full Desktop Web OS)
+  4. macOS Interactive Portfolio (Full Desktop Web OS)
      → https://mac-ios-portfolio.netlify.app/
 
-  4. Enterprise E-Procurement System (MERN Stack)
-     → https://github.com/saqlain2109/E-procument
+  5. Enterprise E-Procurement Portal (MERN Platform)
+     • Live: https://e-procument.vercel.app/
+     • Code: https://github.com/saqlain2109/E-procument
 
-  5. Travel & Expense Management Portal (Full-Stack)
+  6. Travel & Expense Management Portal (Full-Stack)
      → https://github.com/saqlain2109/newtravel
 
-  6. Lazarev Agency Clone (Motion Web)
+  7. Lazarev Agency Clone (Motion Web)
      → https://lazarev-clone-1.netlify.app/`,
+        });
+        break;
+
+      case 'experience':
+      case 'exp':
+        newHistory.push({
+          type: 'output',
+          text: `💼 Work Experience (4+ Years Total):
+  • Senior Frontend Developer (Jan 2023 - Present)
+    - Architecting high-performance web apps, interactive 3D UI, and scalable Next.js systems.
+  • Full Stack Developer (Jul 2021 - Dec 2022)
+    - Built responsive frontend architectures, RESTful APIs, and modular component systems.
+  • Frontend & UI Developer (Jan 2021 - Jun 2021)
+    - Developed pixel-perfect, accessible user interfaces using React and modern JavaScript.`,
         });
         break;
 

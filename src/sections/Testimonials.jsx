@@ -36,6 +36,9 @@ const Testimonials = () => {
           title="What Clients & Collaborators Say"
           sub="⭐ Testimonials & Social Proof"
         />
+        <p className="font-calligraphy text-center text-xl md:text-2xl text-cyan-300/90 mt-3 -rotate-1">
+          ~ authentic impressions from teams & collaborators ~
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16 max-w-7xl mx-auto">
           {testimonials.map((item, index) => (
@@ -60,8 +63,9 @@ const Testimonials = () => {
                 </div>
 
                 {/* Review Text */}
+                <span className="font-serif-italic text-5xl text-cyan-400/25 leading-none select-none block -mb-4">“</span>
                 <p className="text-white-50 text-base leading-relaxed mb-6 font-normal">
-                  "{item.review}"
+                  {item.review}
                 </p>
               </div>
 
@@ -74,11 +78,11 @@ const Testimonials = () => {
                   loading="lazy"
                 />
                 <div>
-                  <h4 className="text-white font-semibold text-base flex items-center gap-1.5">
+                  <h4 className="text-white font-display font-semibold text-base flex items-center gap-1.5">
                     {item.name}
                     <span className="text-cyan-400 text-xs" title="Verified Client">✓</span>
                   </h4>
-                  <p className="text-blue-50 text-xs">{item.mentions}</p>
+                  <p className="text-blue-50 text-xs font-tech">{item.mentions}</p>
                 </div>
               </div>
             </div>

@@ -19,8 +19,10 @@ const NavBar = () => {
     return (
         <header className={`navbar ${scrolled ? 'scrolled' : 'not-scrolled'} `}>
             <div className='inner'>
-                <a href="#hero" className="logo">
-                    Saqlain | Stuff
+                <a href="#hero" className="logo flex items-center gap-1.5 group">
+                    <span className="font-display font-extrabold tracking-tight text-white group-hover:text-cyan-400 transition-colors">Saqlain</span>
+                    <span className="text-cyan-400 font-bold">.</span>
+                    <span className="font-calligraphy text-2xl text-cyan-300 font-semibold tracking-wide -rotate-3 transition-transform group-hover:rotate-0">stuff</span>
                 </a>
                 <nav className='desktop'>
                     <ul>

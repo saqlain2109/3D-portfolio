@@ -49,13 +49,16 @@ const Contact = () => {
               title='Get In Touch With Me'
               sub='📧 Contact Information'
             /> 
+            <p className="font-calligraphy text-center text-xl md:text-2xl text-purple-300/90 mt-3 -rotate-1">
+              ~ let's collaborate & build something remarkable together ~
+            </p>
 
             <div className="mt-16 grid-12-cols">
                 <div className='xl:col-span-7'>
                     <div className='flex-center card-border rounded-xl p-6 md:p-10'>
                     <form onSubmit={handleSubmit} ref={formRef} className='w-full flex flex-col gap-6'>
                         <div>
-                            <label htmlFor="name">Name</label>
+                            <label htmlFor="name" className="font-tech text-xs tracking-wider uppercase text-cyan-300/80 mb-1 block">Name</label>
                             <input 
                               type="text" 
                               id='name' 
@@ -67,7 +70,7 @@ const Contact = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="email">Email</label>
+                            <label htmlFor="email" className="font-tech text-xs tracking-wider uppercase text-cyan-300/80 mb-1 block">Email</label>
                             <input 
                               type="email" 
                               id='email' 
@@ -79,7 +82,7 @@ const Contact = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="message">Message</label>
+                            <label htmlFor="message" className="font-tech text-xs tracking-wider uppercase text-cyan-300/80 mb-1 block">Message</label>
                             <textarea 
                               id='message' 
                               name='message' 

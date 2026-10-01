@@ -29,9 +29,11 @@ const Footer = () => {
         </div>
 
         {/* Right Section - Copyright */}
-        <div className='flex flex-col gap-2 items-center md:items-end'>
-          <p className='text-white-50'>© {new Date().getFullYear()} Saqlain | Stuff</p>
-          <p className='text-blue-50 text-sm'>All rights reserved</p>
+        <div className='flex flex-col gap-1.5 items-center md:items-end'>
+          <p className='text-white-50 flex items-center gap-1.5 flex-wrap justify-center md:justify-end'>
+            © {new Date().getFullYear()} <span className="font-display font-bold text-white">Saqlain</span> <span className="text-cyan-400">·</span> <span className="font-calligraphy text-lg text-cyan-300">handcrafted with passion</span>
+          </p>
+          <p className='text-blue-50 text-xs font-tech tracking-wider uppercase'>All rights reserved</p>
         </div>
       </div>
     </footer>

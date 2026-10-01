@@ -67,7 +67,16 @@ const Hero = () => {
         {/*Left Hero Content */}
         <header className='flex flex-col justify-center w-full xl:w-1/2 md:px-20 px-5 relative z-20'>
           <div className='flex flex-col gap-6 md:gap-7'>
-            <div className='hero-text'>
+            <div className="flex items-center gap-3">
+              <span className="hero-badge font-tech tracking-wider uppercase text-xs text-cyan-300 border border-cyan-500/25 bg-cyan-950/20 shadow-[0_0_12px_rgba(6,182,212,0.15)]">
+                ✦ Available for Work
+              </span>
+              <span className="font-calligraphy text-xl md:text-2xl text-yellow-300 font-medium -rotate-2 hidden sm:inline-block">
+                ~ handcrafted with code & 3D art ✦
+              </span>
+            </div>
+
+            <div className='hero-text font-display'>
               <h1>Shaping 
                 <span className='slide'>
                   <span className='wrapper'>
@@ -80,12 +89,12 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>into <span className="font-serif-italic font-normal text-cyan-300 tracking-wide">Real Projects</span></h1>
+              <h1>that <span className="font-serif-italic font-normal text-purple-300 tracking-wide">Deliver Results</span></h1>
             </div>
 
             <p className='text-white-50 md:text-xl text-base relative z-10 pointer-events-auto max-w-xl leading-relaxed'>
-              Hi, I am Saqlain, a Web Developer with a passion for building immersive 3D experiences, scalable web apps, and modern digital interfaces.
+              Hi, I am <span className="font-calligraphy text-2xl md:text-3xl text-white font-bold tracking-wide underline decoration-cyan-400/60 decoration-wavy underline-offset-4">Saqlain</span>, a Creative Developer with a passion for building immersive 3D experiences, scalable web apps, and modern digital interfaces.
             </p>
             
             <div className='flex flex-wrap items-center gap-3.5 relative z-10'>

@@ -89,18 +89,18 @@ const ShowcaseSection = () => {
                 />
               </div>
               <div className="text-content mt-4">
-                <div className="flex items-center gap-2 mb-2">
+                <div className="flex items-center gap-2 mb-2 font-tech">
                   <span className="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
                     Awwwards Clone
                   </span>
                   <span className="text-xs text-blue-50">3D Interactive</span>
                 </div>
-                <h2>Modern Cybersecurity Website Clone (Zentry.com)</h2>
+                <h2 className="font-display font-bold text-2xl md:text-3xl text-white">Modern Cybersecurity Website Clone (Zentry.com)</h2>
                 <p className="text-white-50 md:text-xl text-base leading-relaxed">
                   A visually rich and animated 3D clone of Zentry.com, built using React, GSAP, and Tailwind CSS.
                   Features silky smooth scroll animations, interactive video modals, and modern design precision.
                 </p>
-                <div className="mt-4 flex items-center gap-2 text-cyan-400 text-sm font-semibold group-hover:translate-x-1 transition-transform">
+                <div className="mt-4 flex items-center gap-2 text-cyan-400 text-sm font-semibold group-hover:translate-x-1 transition-transform font-tech">
                   <span>View Live Experience</span>
                   <span>→</span>
                 </div>
@@ -121,12 +121,12 @@ const ShowcaseSection = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 font-tech">
                     <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                       Sports & Hospitality
                     </span>
                   </div>
-                  <h2>Golf Club Experience</h2>
+                  <h2 className="font-display font-bold text-xl text-white">Golf Club Experience</h2>
                 </div>
               </div>
             </a>
@@ -142,12 +142,12 @@ const ShowcaseSection = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <div className="flex items-center gap-2 mb-1">
+                  <div className="flex items-center gap-2 mb-1 font-tech">
                     <span className="px-2.5 py-0.5 rounded-full text-[11px] font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20">
                       Interactive Desktop OS
                     </span>
                   </div>
-                  <h2>macOS Interactive Web Portfolio</h2>
+                  <h2 className="font-display font-bold text-xl text-white">macOS Interactive Web Portfolio</h2>
                 </div>
               </div>
             </a>
@@ -155,10 +155,11 @@ const ShowcaseSection = () => {
         </div>
 
         {/* Expand / View More Projects Section */}
-        <div className="mt-12 flex flex-col items-center">
+        <div className="mt-14 flex flex-col items-center gap-2">
+          <p className="font-calligraphy text-xl text-cyan-300/80 -rotate-1">~ curated archive of scalable web apps ~</p>
           <button
             onClick={() => setShowMore((prev) => !prev)}
-            className="px-6 py-3 rounded-full border border-cyan-500/40 bg-black-100/90 hover:bg-cyan-500/10 text-cyan-300 hover:border-cyan-400 font-semibold text-sm transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.15)] cursor-pointer group"
+            className="px-6 py-3 rounded-full border border-cyan-500/40 bg-black-100/90 hover:bg-cyan-500/10 text-cyan-300 hover:border-cyan-400 font-tech font-semibold text-sm tracking-wider uppercase transition-all duration-300 flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.15)] cursor-pointer group"
           >
             <span>{showMore ? 'Show Less Projects' : 'Explore More Projects (3 More)'}</span>
             <span className={`transition-transform duration-300 ${showMore ? 'rotate-180' : 'group-hover:translate-y-0.5'}`}>
@@ -175,14 +176,14 @@ const ShowcaseSection = () => {
                   className="card-border rounded-2xl p-6 flex flex-col justify-between hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 relative overflow-hidden bg-black-100/80 backdrop-blur-md"
                 >
                   <div>
-                    <div className="flex items-center justify-between gap-2 mb-3">
+                    <div className="flex items-center justify-between gap-2 mb-3 font-tech">
                       <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300">
                         {item.badge}
                       </span>
                       <span className="text-xs text-blue-50">{item.category}</span>
                     </div>
 
-                    <h3 className="text-white text-xl font-bold mb-2 group-hover:text-cyan-300 transition-colors">
+                    <h3 className="font-display text-white text-xl font-bold mb-2 group-hover:text-cyan-300 transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-white-50 text-sm leading-relaxed mb-6">

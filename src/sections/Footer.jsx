@@ -5,10 +5,7 @@ import AnimatedSignature from '../components/AnimatedSignature'
 const Footer = () => {
   return (
     <footer className='footer'>
-      {/* Animated Handwriting Stroke Signature for Saqlain */}
-      <AnimatedSignature />
-
-      <div className='footer-container border-t border-white/5 pt-8'>
+      <div className='footer-container'>
         {/* Left Section - Terms & Conditions */}
         <div className='flex flex-col gap-2'>
           <p className='text-white-50'>Terms & Conditions</p>
@@ -32,10 +29,11 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Right Section - Copyright */}
-        <div className='flex flex-col gap-1.5 items-center md:items-end'>
-          <p className='text-white-50 flex items-center gap-1.5 flex-wrap justify-center md:justify-end'>
-            © {new Date().getFullYear()} <span className="font-display font-bold text-white">Saqlain</span> <span className="text-cyan-400">·</span> <span className="font-calligraphy text-lg text-cyan-300">handcrafted with passion</span>
+        {/* Right Section - Signature & Copyright */}
+        <div className='flex flex-col gap-2 items-center md:items-end'>
+          <AnimatedSignature className="w-44 sm:w-52 md:w-56 h-12 md:h-14 mb-0.5" />
+          <p className='text-white-50 flex items-center gap-1.5 flex-wrap justify-center md:justify-end text-sm'>
+            © {new Date().getFullYear()} <span className="font-display font-bold text-white">Saqlain</span> <span className="text-cyan-400">·</span> <span className="font-calligraphy text-base text-cyan-300">handcrafted with passion</span>
           </p>
           <p className='text-blue-50 text-xs font-tech tracking-wider uppercase'>All rights reserved</p>
         </div>

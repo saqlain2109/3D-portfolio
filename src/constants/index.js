@@ -256,14 +256,14 @@ const navLinks = [
       imgPath: "/images/insta.png",
     },
     {
-      name: "Facebook",
-      url: "https://facebook.com",
-      imgPath: "/images/fb.png",
+      name: "WhatsApp",
+      url: "https://wa.me/919004772402",
+      imgPath: "/images/whatsapp.svg",
     },
     {
-      name: "X",
-      url: "https://x.com",
-      imgPath: "/images/x.png",
+      name: "Email",
+      url: "mailto:usesaqlain05@gmail.com",
+      imgPath: "/images/gmail.svg",
     },
     {
       name: "LinkedIn",

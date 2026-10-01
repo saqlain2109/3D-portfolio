@@ -94,7 +94,8 @@ I transform complex design concepts into high-performing, fluid websites.`,
         newHistory.push({
           type: 'output',
           text: `📬 Contact Info:
-  • Email: saqlainsupariwala@gmail.com
+  • Email: usesaqlain05@gmail.com
+  • WhatsApp / Phone: +91 9004772402 (https://wa.me/919004772402)
   • LinkedIn: https://www.linkedin.com/in/saqlain-supariwala/
   • Instagram: https://www.instagram.com/saqlain_stuff`,
         });

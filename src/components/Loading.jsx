@@ -63,10 +63,10 @@ const Loading = ({ onComplete }) => {
 
   return (
     <div ref={containerRef} className="fixed inset-0 z-[9999] pointer-events-none select-none">
-      {/* Accent Emerald / Mint Transition Layer */}
+      {/* Accent Cyan Transition Layer */}
       <div
         ref={elemRef}
-        className="fixed bottom-0 left-0 w-full bg-[#19f7ad] z-[9998] pointer-events-auto"
+        className="fixed bottom-0 left-0 w-full bg-cyan-400 z-[9998] pointer-events-auto shadow-[0_0_50px_rgba(6,182,212,0.5)]"
       />
 
       {/* Secondary Wipe Layer */}
@@ -99,8 +99,9 @@ const Loading = ({ onComplete }) => {
               </span>
             </span>
 
-            <span className="overflow-hidden inline-block">
-              <span className="reveal-word inline-block font-serif-italic italic font-normal text-[#19f7ad] drop-shadow-[0_0_20px_rgba(25,247,173,0.5)]">
+            {/* "Stuff" with generous right padding to eliminate italic 'f' clipping, matching navigation cyan */}
+            <span className="overflow-hidden inline-block pr-4 sm:pr-6 md:pr-8">
+              <span className="reveal-word inline-block font-serif-italic italic font-normal text-cyan-300 drop-shadow-[0_0_25px_rgba(34,211,238,0.6)]">
                 Stuff
               </span>
             </span>
@@ -122,7 +123,7 @@ const Loading = ({ onComplete }) => {
         {/* Bottom Sub-indicator */}
         <div className="flex items-center justify-between text-white/30 text-xs font-tech tracking-wider uppercase">
           <span>Creative Engineering</span>
-          <span className="animate-pulse text-[#19f7ad]">✦ loading universe</span>
+          <span className="animate-pulse text-cyan-300">✦ loading universe</span>
         </div>
       </div>
     </div>

@@ -156,7 +156,7 @@ const navLinks = [
       imgPath: "/images/exp1.png",
       logoPath: "/images/logo1.png",
       title: "Senior Frontend Developer",
-      date: "January 2023 - Present",
+      date: "January 2024 - 2026 (Present)",
       responsibilities: [
         "Architected and maintained high-performance user-facing web applications with modern React and Next.js.",
         "Collaborated closely with UI/UX designers to translate Figma prototypes into pixel-perfect, interactive experiences.",
@@ -168,7 +168,7 @@ const navLinks = [
       imgPath: "/images/exp2.png",
       logoPath: "/images/logo2.png",
       title: "Full Stack Developer",
-      date: "July 2021 - December 2022",
+      date: "June 2022 - December 2023",
       responsibilities: [
         "Developed and deployed scalable web applications, integrating responsive frontends with secure backend APIs.",
         "Collaborated across engineering teams to streamline data flows, state management, and performance bottlenecks.",
@@ -180,7 +180,7 @@ const navLinks = [
       imgPath: "/images/exp3.png",
       logoPath: "/images/logo3.png",
       title: "Frontend & UI Developer",
-      date: "January 2021 - June 2021",
+      date: "January 2022 - May 2022",
       responsibilities: [
         "Built cross-platform user interfaces using React and modern JavaScript, integrating with backend services.",
         "Improved application performance and user engagement through code optimization and testing.",
@@ -188,7 +188,7 @@ const navLinks = [
       ],
     },
   ];
-  
+
   const expLogos = [
     {
       name: "logo1",
@@ -203,46 +203,46 @@ const navLinks = [
       imgPath: "/images/logo3.png",
     },
   ];
-  
+
   const testimonials = [
     {
-      name: "Esther Howard",
-      mentions: "@estherhoward",
+      name: "Feroze Ahamed Muneer",
+      mentions: "@ferozemuneer",
       review:
         "I can’t say enough good things about Saqlain. He took our complex 3D web requirements and turned them into a seamless, high-performance website. His Three.js and React expertise is truly world-class, and his problem-solving skills saved us weeks of work.",
       imgPath: "/images/client1.png",
     },
     {
-      name: "Wade Warren",
-      mentions: "@wadewarren",
+      name: "Nina Santiago Wichert",
+      mentions: "@ninasantiago",
       review:
         "Working with Saqlain was an absolute game-changer. He transformed our concept into a futuristic, ultra-responsive digital experience with silky-smooth GSAP animations. His commitment to speed, code quality, and on-time delivery is unmatched.",
       imgPath: "/images/client3.png",
     },
     {
-      name: "Guy Hawkins",
-      mentions: "@guyhawkins",
+      name: "Yves Ndanyuzwe",
+      mentions: "@yvesndanyuzwe",
       review:
         "Collaborating with Saqlain was an extraordinary experience. His technical depth, clear communication, and eye for modern interactive design are exceptional. Saqlain delivered a product that genuinely elevated our brand and impressed all our stakeholders.",
       imgPath: "/images/client2.png",
     },
     {
-      name: "Marvin McKinney",
-      mentions: "@marvinmckinney",
+      name: "Akbar Hussain",
+      mentions: "@akbarhussain",
       review:
         "Saqlain is one of the most talented frontend and 3D developers I have had the pleasure to work with. He took our rough ideas and crafted an intuitive, visually stunning web app that runs flawlessly across both mobile and desktop.",
       imgPath: "/images/client5.png",
     },
     {
-      name: "Floyd Miles",
-      mentions: "@floydmiles",
+      name: "Todd Emanuel",
+      mentions: "@toddemanuel",
       review:
         "Saqlain's mastery of React, Three.js, and modern UI design is remarkable. He built a scalable, interactive platform that doubled our user retention within weeks of launch. Reliable, creative, and highly professional!",
       imgPath: "/images/client4.png",
     },
     {
-      name: "Albert Flores",
-      mentions: "@albertflores",
+      name: "RChibana",
+      mentions: "@rchibana",
       review:
         "Saqlain understood our exact vision right from our initial discussion and delivered results that exceeded our highest expectations. He writes clean, modular code and ensures every micro-interaction feels polished. 10/10 recommended!",
       imgPath: "/images/client6.png",

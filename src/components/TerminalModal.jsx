@@ -99,12 +99,12 @@ I transform complex design concepts into high-performing, fluid websites.`,
       case 'exp':
         newHistory.push({
           type: 'output',
-          text: `💼 Work Experience (4+ Years Total):
-  • Senior Frontend Developer (Jan 2023 - Present)
+          text: `💼 Work Experience (4 Years Total: 2022 - 2026):
+  • Senior Frontend Developer (Jan 2024 - 2026 Present)
     - Architecting high-performance web apps, interactive 3D UI, and scalable Next.js systems.
-  • Full Stack Developer (Jul 2021 - Dec 2022)
+  • Full Stack Developer (Jun 2022 - Dec 2023)
     - Built responsive frontend architectures, RESTful APIs, and modular component systems.
-  • Frontend & UI Developer (Jan 2021 - Jun 2021)
+  • Frontend & UI Developer (Jan 2022 - May 2022)
     - Developed pixel-perfect, accessible user interfaces using React and modern JavaScript.`,
         });
         break;
@@ -213,7 +213,7 @@ Scroll down to the Contact Section or drop an email!`,
             </div>
 
             {/* Terminal Body */}
-            <div 
+            <div
               className="flex-1 p-4 overflow-y-auto space-y-2 text-zinc-300"
               onClick={() => inputRef.current?.focus()}
             >

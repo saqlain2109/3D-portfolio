@@ -41,8 +41,8 @@ const HeroExperience = ({ theme = 'cyberpunk' }) => {
 
       <Suspense fallback={<RoomPlaceholder />}>
         <group
-          scale={isMobile ? 0.75 : 1}
-          position={[0, -4.5, 0]}
+          scale={isMobile ? 0.72 : isTablet ? 0.85 : 0.95}
+          position={[0, isMobile ? -3.2 : isTablet ? -2.9 : -2.8, 0]}
           rotation={[0, -Math.PI / 4, 0]}
         >
           <Room theme={theme} />

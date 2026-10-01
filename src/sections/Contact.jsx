@@ -102,13 +102,12 @@ const Contact = () => {
                         )}
 
                         <div>
-                            <button type='submit' disabled={loading} className='w-full cursor-pointer'>
-                                <div className='cta-button group px-10 md:px-20'>
-                                <div className='bg-circle'/>
-                                <p className='text'>{loading ? 'Sending...' : 'Send Message'}</p>
-                                <div className='arrow-wrapper'>
-                                    <img src="/images/arrow-down.svg" alt="arrow" />
-                                </div>
+                            <button type='submit' disabled={loading} className='w-full cursor-pointer h-14'>
+                                <div className='cta-button group'>
+                                    <p className='text'>{loading ? 'Sending...' : 'Send Message'}</p>
+                                    <div className='arrow-wrapper'>
+                                        <img src="/images/arrow-down.svg" alt="arrow" />
+                                    </div>
                                 </div>
                             </button>
                         </div>

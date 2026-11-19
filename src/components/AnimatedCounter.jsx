@@ -27,7 +27,8 @@ const AnimatedCounter = () => {
         ease: "power2.out",
         scrollTrigger: {
           trigger: "#counter",
-          start: "top 85%",
+          start: "top 98%",
+          once: true,
         },
         onUpdate: () => {
           numberElement.textContent = `${Math.round(countObj.val)}${item.suffix}`;
@@ -40,18 +41,18 @@ const AnimatedCounter = () => {
   }, []);
 
   return (
-    <div id="counter" ref={counterRef} className="padding-x-lg xl:mt-0 mt-32">
+    <div id="counter" ref={counterRef} className="padding-x-lg w-full">
       <div className="mx-auto grid-4-cols">
         {counterItems.map((item, index) => (
           <div
             key={index}
             ref={(el) => el && (countersRef.current[index] = el)}
-            className="bg-zinc-900 rounded-lg p-10 flex flex-col justify-center"
+            className="bg-zinc-900/90 border border-white/5 rounded-xl p-5 md:p-6 xl:p-6 2xl:p-8 flex flex-col justify-center backdrop-blur-md shadow-lg"
           >
-            <div className="counter-number text-white-50 text-5xl font-bold mb-2">
-              0 {item.suffix}
+            <div className="counter-number text-white font-display text-3xl md:text-4xl xl:text-5xl font-bold mb-1">
+              {item.value}{item.suffix}
             </div>
-            <div className="text-white-50 text-lg">{item.label}</div>
+            <div className="text-white/70 text-xs md:text-sm xl:text-base font-medium">{item.label}</div>
           </div>
         ))}
       </div>

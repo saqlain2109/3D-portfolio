@@ -3,6 +3,18 @@
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+  --font-heading: 'HelveticaNowDisplay-Medium', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'HelveticaNowDisplayW01-Rg', 'Helvetica Neue', Arial, sans-serif;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 html,
@@ -104,7 +116,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 pt-28 md:pt-36 xl:pt-20 min-h-screen flex flex-col xl:flex-row xl:items-center items-start justify-between;
+    @apply relative z-10 pt-20 sm:pt-28 md:pt-32 xl:pt-24 xl:flex-1 flex flex-col xl:flex-row xl:items-center items-start justify-between;
   }
 
   .hero-text {
